@@ -1,0 +1,52 @@
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Antag 4 kort per rad, justera detta baserat på dina behov
+    gap: 10px; // Lägger till lite utrymme mellan korten
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.game-info, .score-board {
+    font-size: 18px; // Enhetsstorlek för enklare läsning
+    color: #333; // Konsekvent textfärg
+    margin: 20px;
+    text-align: center;
+    font-weight: 500; // Lite tyngd på fonten
+}
+
+.score-board {
+    font-size: 20px; // Lite större för poängskylten
+}
+
+.difficulty-selector, .back-to-menu {
+    text-align: center;
+    margin: 20px auto;
+
+    button, .back-to-menu {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #f8f8f8;
+        border: 2px solid #ccc; // Tydligare gränser
+        border-radius: 8px; // Mjukare hörn
+        transition: background-color 0.3s, box-shadow 0.3s; // Smidiga övergångar
+
+        &:hover {
+            background-color: #e9e9e9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Skugga för djup
+        }
+    }
+
+    .back-to-menu {
+        color: white;
+        background-color: #007BFF; // Blå knapp för "tillbaka till menyn"
+    
+        &:hover {
+            background-color: #0056b3; // Mörkare blå vid hover
+        }
+    }
+  
+    
+}
